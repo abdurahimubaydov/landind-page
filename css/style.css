@@ -247,7 +247,7 @@ body {
     width: 30%;
     display: flex;
     flex-direction: column;
-    padding: 0px 20px 20px 0px;
+    padding: 20px;
     border-radius: 10px;
     transition: .2s;
 }
@@ -280,6 +280,174 @@ body {
 .bacground-quality {
     color: #e5e6fc;
 }
+
+
+/*  */
+
+
+.furniture-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+}
+
+
+.furniture-section h1 {
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 35px;
+    letter-spacing: 0em;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.furniture-section p {
+    margin-top: 0;
+    font-size: 17px;
+    text-align: center;
+    margin-bottom: 30px;
+    line-height: 25px;
+}
+
+
+.furniture-section .furniture-search-details {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* padding: 30px; */
+    margin-bottom: 30px;
+}
+
+.furniture-section .furniture-search-details .search-furniture {
+    display: flex;
+}
+
+.search-furniture input {
+    width: 220px;
+    height: 50px;
+    border-radius: 0;
+    outline: 0;
+    background: #EFEFEF;
+    color: #686868;
+    padding-left: 10px;
+    font-size: 17px;
+    border: 2px solid #373737;
+}
+.search-furniture .search-icon {
+    width: 50px;
+    height: 50px;
+    background: #373737;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.furniture-search-details .search-by-stuff{
+    display: flex;
+}
+
+.search-by-stuff label {
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* furniture list */
+
+.furniture-section .furnitures-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.furniture-card {
+    width: 23%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    background: #F9F9F9;
+    transition: .2s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+
+.furniture-card:hover {
+    box-shadow: 8px 8px 20px 0px #27272B1A;
+}
+
+.furniture-card .furniture-card-header {
+    width: 100%;
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.furniture-card .furniture-card-header img {
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+
+}
+
+
+.furniture-card .furniture-card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.furniture-card .furniture-card-body .sdsds {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 10px;
+}
+
+.furniture-card .furniture-card-body .sdsds h1 {
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 30px;
+    margin: 0;
+}
+
+.furniture-card .furniture-card-body .sdsds label {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.furniture-card .furniture-card-body p {
+    text-align: left;
+    padding-left: 10px;
+}
+
+.furniture-card .furniture-card-body button {
+    width: 100px;
+    margin-bottom: 10px;
+}
+
+
+/* Footer Section ______________________________________________________________ */
+
+.footer {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    color: #FFFFFF;
+    background: #373737;
+    margin-top: 50px;
+}
+
 
 
 @media screen and (max-width: 768px) {
@@ -332,6 +500,14 @@ body {
 
     /* service section */
 
+    .service-section h1 {
+        text-align: center;
+    }
+
+    .service-section p {
+        text-align: center;
+    }
+
     .service-list {
         display: flex;
         flex-direction: column;
@@ -343,8 +519,45 @@ body {
         padding: 20px;
     }
 
-}
+    /* furniture section */
 
+    .furniture-search-details {
+        flex-direction: column;
+        padding: 0;
+    }
+
+    .search-furniture {
+        margin-bottom: 20px;
+    }
+
+    .search-by-stuff {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .search-by-stuff label {
+        margin-bottom: 10px;
+
+    }
+
+    .furnitures-list {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .furnitures-list .furniture-card {
+        width: 49%;
+        margin-bottom: 30px;
+    }
+
+}
 
 @media screen and (max-width: 660px) {
     .navbar ul:nth-child(2) {
@@ -380,5 +593,18 @@ body {
     .service-list .service-card {
         width: 100%;
         margin-bottom: 30px;
+    }
+}
+
+
+@media screen and (max-width: 425px) {
+    .furnitures-list .furniture-card {
+        width: 99%;
+        margin-bottom: 30px;
+    }
+
+    .furniture-card .furniture-card-header {
+        height: 200px;
+        object-fit: cover;
     }
 }
